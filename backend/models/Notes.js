@@ -9,7 +9,6 @@ const NotesSchema = new Schema({
     description:{
         type: String,
         required: true
-        
     },
     tag:{
         type: String,
@@ -22,6 +21,3 @@ const NotesSchema = new Schema({
   });
 
   module.exports = mongoose.model('user', NotesSchema)
-
-
-

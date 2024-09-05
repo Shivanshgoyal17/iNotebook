@@ -6,6 +6,8 @@ connectToMongo();
 const app = express()
 const port = 3000
 
+app.use(express.json())          // If we want to use the req.body then we need to use one middleware. (this is middleware)
+
 // Available Routes
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes', require('./routes/notes'))
